@@ -1,0 +1,201 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* My styles */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff595e;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    font-size: 1.4rem;
+    background-color: #8ac926;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffca3a;
+    border-radius: 20px;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.item-name {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    height: 600px;
+    background-color: #ffca3a;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.wrapper {
+
+}
+
+.worker-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
